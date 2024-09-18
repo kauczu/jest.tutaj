@@ -769,38 +769,38 @@ function setButtonsToolTip() {
     // Main buttons
     refreshMainButtonsToolTipPlacement();
     // Chat room buttons
-    setTippy(msgerClose, 'Close', 'bottom');
+    setTippy(msgerClose, 'Zamknij', 'bottom');
     setTippy(msgerShowChatOnMsgDiv, 'Show chat when you receive a new message', 'bottom');
     setTippy(msgerSpeechMsgDiv, 'Speech the incoming messages', 'bottom');
     setTippy(msgerTogglePin, 'Toggle chat pin', 'bottom');
-    setTippy(msgerTheme, 'Ghost theme', 'bottom');
-    setTippy(msgerMaxBtn, 'Maximize', 'bottom');
-    setTippy(msgerMinBtn, 'Minimize', 'bottom');
+    setTippy(msgerTheme, 'Przeźroczystość', 'bottom');
+    setTippy(msgerMaxBtn, 'Maksymalizuj', 'bottom');
+    setTippy(msgerMinBtn, 'Minimalizuj', 'bottom');
     setTippy(msgerEmojiBtn, 'Emoji', 'top');
     setTippy(msgerMarkdownBtn, 'Markdown', 'top');
     setTippy(msgerGPTBtn, 'ChatGPT', 'top');
-    setTippy(msgerShareFileBtn, 'Share file', 'top');
-    setTippy(msgerCPBtn, 'Private messages', 'top');
-    setTippy(msgerCleanTextBtn, 'Clean', 'top');
-    setTippy(msgerPasteBtn, 'Paste', 'top');
-    setTippy(msgerSendBtn, 'Send', 'top');
+    setTippy(msgerShareFileBtn, 'Udostępnij plik', 'top');
+    setTippy(msgerCPBtn, 'Prywatne wiadomości', 'top');
+    setTippy(msgerCleanTextBtn, 'Wyczyść', 'top');
+    setTippy(msgerPasteBtn, 'Wklej', 'top');
+    setTippy(msgerSendBtn, 'Wyślij', 'top');
     // Chat participants buttons
-    setTippy(msgerCPCloseBtn, 'Close', 'bottom');
+    setTippy(msgerCPCloseBtn, 'Zamknij', 'bottom');
     // Caption buttons
-    setTippy(captionClose, 'Close', 'bottom');
-    setTippy(captionMaxBtn, 'Maximize', 'bottom');
-    setTippy(captionMinBtn, 'Minimize', 'bottom');
+    setTippy(captionClose, 'Zamknij', 'bottom');
+    setTippy(captionMaxBtn, 'Maksymalizuj', 'bottom');
+    setTippy(captionMinBtn, 'Minimalizuj', 'bottom');
     setTippy(captionTogglePin, 'Toggle caption pin', 'bottom');
-    setTippy(captionTheme, 'Ghost theme', 'bottom');
-    setTippy(captionClean, 'Clean the messages', 'bottom');
-    setTippy(captionSaveBtn, 'Save the messages', 'bottom');
+    setTippy(captionTheme, 'Przeźroczystość', 'bottom');
+    setTippy(captionClean, 'Wyczyść wiadomości', 'bottom');
+    setTippy(captionSaveBtn, 'Zapisz wiadomości', 'bottom');
     setTippy(speechRecognitionIcon, 'Status', 'bottom');
     setTippy(speechRecognitionStart, 'Start', 'top');
     setTippy(speechRecognitionStop, 'Stop', 'top');
     // Settings
-    setTippy(mySettingsCloseBtn, 'Close', 'bottom');
-    setTippy(myPeerNameSetBtn, 'Change name', 'top');
-    setTippy(myRoomId, 'Room name (click to copy/share)', 'right');
+    setTippy(mySettingsCloseBtn, 'Zamknij', 'bottom');
+    setTippy(myPeerNameSetBtn, 'Zmień nazwę', 'top');
+    setTippy(myRoomId, 'Nazwa pokoju (kliknij aby skopiować i udostępnić))', 'right');
     setTippy(
         switchPushToTalk,
         'If Active, When SpaceBar keydown the microphone will be activated, on keyup will be deactivated, like a walkie-talkie',
@@ -6009,7 +6009,7 @@ function shareRoomMeetingURL(checkScreen = false) {
     Swal.fire({
         background: swBg,
         position: 'center',
-        title: 'Share the room',
+        title: 'Udostępnij pokój',
         html: `
         <div id="qrRoomContainer">
             <canvas id="qrRoom"></canvas>
@@ -6022,9 +6022,9 @@ function shareRoomMeetingURL(checkScreen = false) {
         showCancelButton: true,
         cancelButtonColor: 'red',
         denyButtonColor: 'green',
-        confirmButtonText: `Copy URL`,
-        denyButtonText: `Email invite`,
-        cancelButtonText: `Close`,
+        confirmButtonText: `Kopiuj URL`,
+        denyButtonText: `Zaproś emailem`,
+        cancelButtonText: `Zamknij`,
         showClass: { popup: 'animate__animated animate__fadeInDown' },
         hideClass: { popup: 'animate__animated animate__fadeOutUp' },
     }).then((result) => {

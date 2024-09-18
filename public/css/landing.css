@@ -1972,7 +1972,7 @@ textarea.form-input {
 
 @media (min-width: 821px) {
     .container .split-wrap .split-item .split-item-content {
-        width: 585px;
+        width: 590px;
     }
 
     .container .split-wrap .split-item .split-item-image {
@@ -2658,14 +2658,16 @@ ul.pricing-item-features-list li {
 
 @media (min-width: 641px) {
     .cta .section-inner {
-        padding-top: 50px;
+        padding-top: 50    px;
         padding-bottom: 10px;
     }
 
     .cta-split {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
+        flex-direction: row;
+        width: 80%;
     }
 
     .cta-split .cta-slogan {

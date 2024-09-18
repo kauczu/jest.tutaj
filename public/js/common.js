@@ -146,26 +146,26 @@ function getRandomNumber(length) {
 
 // Typing Effect
 
-let i = 0;
-let txt = num + adjective + noun;
-let speed = 100;
-
+// let i = 0;
+// let txt = num + adjective + noun;
+// let speed = 100;
+// 
 /**
  * Set room name with typewriter effect
  */
-function typeWriter() {
-    if (i < txt.length) {
-        roomName.value += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
-}
-
-const roomName = document.getElementById('roomName');
-if (roomName) {
-    roomName.value = '';
-    typeWriter();
-}
+// function typeWriter() {
+//     if (i < txt.length) {
+//         roomName.value += txt.charAt(i);
+//         i++;
+//         setTimeout(typeWriter, speed);
+//     }
+// }
+// 
+// const roomName = document.getElementById('roomName');
+// if (roomName) {
+//     roomName.value = '';
+//     typeWriter();
+// } 
 
 // ####################################################################
 // LANDING | NEW CALL
@@ -225,7 +225,7 @@ function joinRoom() {
         window.location.href = '/join/' + roomName;
         window.localStorage.lastRoom = roomName;
     } else {
-        alert('Room name empty!\nPlease pick a room name.');
+        alert('Nie podano nazwy pokoju!\nProszę podać nazwę pokoju.');
     }
 }
 

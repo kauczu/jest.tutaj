@@ -36,10 +36,10 @@ const brand = {
             'Bezpieczna, darmowa, zdecentralizowana platforma komunikacyjna. oparta o MiroTalk',
     },
     site: {
-        landingTitle: 'jest.Tutaj tyle że tam.',
-        newCallTitle: 'jest.Tutaj tyle że tam.',
+        landingTitle: 'jest.Tutaj, tyle że tam, chociaż tu.',
+        newCallTitle: 'jest.Tutaj, tyle że tam, chociaż tu.',
         loginTitle: 'jest.Tutaj - wejście nie dla każdego.',
-        clientTitle: 'jest.Tutaj tyle że tam.',
+        clientTitle: 'jest.Tutaj, tyle że tam, chociaż tu.',
         privacyPolicyTitle: 'jest.Tutaj - zasady i prywatność.',
         stunTurnTitle: 'Test Stun/Turn Servers.',
         notFoundTitle: 'jest.Tutaj - 404 nie odnalezione.',

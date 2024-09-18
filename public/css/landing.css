@@ -2665,7 +2665,7 @@ ul.pricing-item-features-list li {
     .cta-split {
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: row;
         width: 80%;
     }

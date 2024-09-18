@@ -2057,10 +2057,12 @@ textarea.form-input {
         box-shadow 0.3s;
 }
 
+/*
 .site-header .brand:hover {
     filter: brightness(1.5) saturate(1.2);
     box-shadow: 0 4px 15px rgba(255, 0, 208, 0.6);
 }
+*/
 
 .site-header-inner {
     display: flex;
@@ -2770,7 +2772,7 @@ ul.pricing-item-features-list li {
     max-width: 100%;
     height: 1024px;
     /* background-image: url(../images/illustration-section-01.svg); */
-    background-image: url(../images/bg.svg);
+    background-image: url(../images/welcome-background1.png);
     background-repeat: no-repeat;
     background-size: cover; /*auto*/
     left: 50%;

@@ -2658,8 +2658,8 @@ ul.pricing-item-features-list li {
 
 @media (min-width: 641px) {
     .cta .section-inner {
-        padding-top: 64px;
-        padding-bottom: 64px;
+        padding-top: 50px;
+        padding-bottom: 10px;
     }
 
     .cta-split {

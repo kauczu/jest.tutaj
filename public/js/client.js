@@ -1508,21 +1508,21 @@ async function whoAreYou() {
         allowOutsideClick: false,
         allowEscapeKey: false,
         background: swBg,
-        title: 'MiroTalk P2P',
+        title: 'jest.Tutaj',
         position: 'center',
         input: 'text',
-        inputPlaceholder: 'Enter your email or name',
+        inputPlaceholder: 'Wpisz Nazwę lub email',
         inputAttributes: { maxlength: 32 },
         inputValue: window.localStorage.peer_name ? window.localStorage.peer_name : '',
         html: initUser, // inject html
-        confirmButtonText: `Join meeting`,
+        confirmButtonText: `Dołącz`,
         customClass: { popup: 'init-modal-size' },
         showClass: { popup: 'animate__animated animate__fadeInDown' },
         hideClass: { popup: 'animate__animated animate__fadeOutUp' },
         inputValidator: async (value) => {
-            if (!value) return 'Please enter your email or name';
+            if (!value) return 'Proszę wpisać Nazwę lub email';
             // Long name
-            if (value.length > 30) return 'Name must be max 30 char';
+            if (value.length > 30) return 'Nazwa nie może przekraczać 30 znaków';
 
             // prevent xss execution itself
             myPeerName = filterXSS(value);
@@ -1530,12 +1530,12 @@ async function whoAreYou() {
             // prevent XSS injection to remote peer
             if (isHtml(myPeerName)) {
                 myPeerName = '';
-                return 'Invalid name!';
+                return 'Nieprawidłowa nazwa!';
             }
 
             // check if peer name is already in use in the room
             if (await checkUserName()) {
-                return 'Username is already in use!';
+                return 'Nazwa jest już w użyciu!';
             } else {
                 window.localStorage.peer_name = myPeerName;
                 whoAreYouJoin();

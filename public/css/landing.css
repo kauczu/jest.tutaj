@@ -1925,8 +1925,8 @@ textarea.form-input {
     }
 
     .split-wrap .split-item {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 00px;
+        padding-bottom: 80px;
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
@@ -1935,7 +1935,7 @@ textarea.form-input {
 
     .split-wrap .split-item .split-item-content {
         flex-shrink: 0;
-        width: 396px;
+        width: 585px;
         margin-bottom: 0;
         margin-right: 64px;
     }
@@ -1972,7 +1972,7 @@ textarea.form-input {
 
 @media (min-width: 821px) {
     .container .split-wrap .split-item .split-item-content {
-        width: 488px;
+        width: 585px;
     }
 
     .container .split-wrap .split-item .split-item-image {

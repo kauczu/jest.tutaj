@@ -1858,7 +1858,7 @@ textarea.form-input {
 }
 
 .split-wrap {
-    margin-top: -24px;
+    margin-top: 0px;
 }
 
 .split-wrap:last-of-type {

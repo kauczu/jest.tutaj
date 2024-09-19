@@ -842,7 +842,7 @@ function setButtonsToolTip() {
     setTippy(whiteboardUndoBtn, 'Cofnij', 'bottom');
     setTippy(whiteboardRedoBtn, 'Powtórz', 'bottom');
     // Suspend/Hide File transfer buttons
-    setTippy(sendAbortBtn, 'Przerwij transfer pliku, 'bottom');
+    setTippy(sendAbortBtn, 'Przerwij transfer pliku', 'bottom');
     setTippy(receiveAbortBtn, 'Przerwij transfer pliku', 'bottom');
     setTippy(receiveHideBtn, 'Ukryj transfer pliku', 'bottom');
     // Video/audio URL player

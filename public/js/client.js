@@ -3091,19 +3091,19 @@ async function loadLocalMedia(stream, kind) {
 
             // no mobile devices
             if (!isMobileDevice) {
-                setTippy(mySessionTime, 'Session Time', 'bottom');
-                setTippy(myPeerName, 'My name', 'bottom');
-                setTippy(myHandStatusIcon, 'My hand is raised', 'bottom');
+                setTippy(mySessionTime, 'Czas trwania sesji', 'bottom');
+                setTippy(myPeerName, 'Moja nazwa', 'bottom');
+                setTippy(myHandStatusIcon, 'Ręka podniesiona', 'bottom');
                 setTippy(myPrivacyBtn, 'Toggle video privacy', 'bottom');
-                setTippy(myVideoStatusIcon, 'My video is on', 'bottom');
-                setTippy(myAudioStatusIcon, 'My audio is on', 'bottom');
-                setTippy(myVideoToImgBtn, 'Take a snapshot', 'bottom');
-                setTippy(myVideoFullScreenBtn, 'Full screen mode', 'bottom');
-                setTippy(myVideoPiPBtn, 'Toggle picture in picture', 'bottom');
+                setTippy(myVideoStatusIcon, 'Moje wideo jest włączone', 'bottom');
+                setTippy(myAudioStatusIcon, 'Moje audio jest włączone', 'bottom');
+                setTippy(myVideoToImgBtn, 'Zrzut ekranu', 'bottom');
+                setTippy(myVideoFullScreenBtn, 'Pełny ekran', 'bottom');
+                setTippy(myVideoPiPBtn, 'Obraz w obrazie PIP', 'bottom');
                 setTippy(myVideoZoomInBtn, 'Zoom in video', 'bottom');
                 setTippy(myVideoZoomOutBtn, 'Zoom out video', 'bottom');
-                setTippy(myVideoPinBtn, 'Toggle Pin video', 'bottom');
-                setTippy(myVideoMirrorBtn, 'Toggle video mirror', 'bottom');
+                setTippy(myVideoPinBtn, 'Przypnij wideo', 'bottom');
+                setTippy(myVideoMirrorBtn, 'Odbicie lustrzane', 'bottom');
             }
 
             // my video avatar image

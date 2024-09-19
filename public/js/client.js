@@ -9995,11 +9995,11 @@ function selectFileToShare(peer_id, broadcast = false) {
         imageAlt: 'mirotalk-file-sharing',
         imageUrl: images.share,
         position: 'center',
-        title: 'Share file',
+        title: 'Udostępnij plik',
         input: 'file',
         html: `
         <div id="dropArea">
-            <p>Drag and drop your file here</p>
+            <p>Przeciągnij i upuść plik tutaj</p>
         </div>
         `,
         inputAttributes: {
@@ -10014,8 +10014,8 @@ function selectFileToShare(peer_id, broadcast = false) {
             dropArea.addEventListener('drop', handleDrop);
         },
         showDenyButton: true,
-        confirmButtonText: `Send`,
-        denyButtonText: `Cancel`,
+        confirmButtonText: `Wyślij`,
+        denyButtonText: `Anuluj`,
         showClass: { popup: 'animate__animated animate__fadeInDown' },
         hideClass: { popup: 'animate__animated animate__fadeOutUp' },
     }).then((result) => {

@@ -1923,7 +1923,7 @@ function checkPeerAudioVideo() {
  * Room and Peer name are ok Join Channel
  */
 async function whoAreYouJoin() {
-    myVideoParagraph.innerText = myPeerName + ' (me)';
+    myVideoParagraph.innerText = myPeerName + ' (ja)';
     setPeerAvatarImgName('myVideoAvatarImage', myPeerName);
     setPeerAvatarImgName('myProfileAvatar', myPeerName);
     setPeerChatAvatarImgName('right', myPeerName);
@@ -6990,7 +6990,7 @@ function handleMediaRecorderStop(event) {
     emitPeersAction('recStop');
     emitPeerStatus('rec', false);
     isStreamRecording = false;
-    myVideoParagraph.innerText = myPeerName + ' (me)';
+    myVideoParagraph.innerText = myPeerName + ' (ja)';
     if (isRecScreenStream) {
         recScreenStream.getTracks().forEach((track) => {
             if (track.kind === 'video') track.stop();
@@ -8263,7 +8263,7 @@ async function updateMyPeerName() {
     const myOldPeerName = myPeerName;
 
     myPeerName = myNewPeerName;
-    myVideoParagraph.innerText = myPeerName + ' (me)';
+    myVideoParagraph.innerText = myPeerName + ' (ja)';
 
     sendToServer('peerName', {
         room_id: roomId,

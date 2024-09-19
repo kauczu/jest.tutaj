@@ -6015,10 +6015,10 @@ function shareRoomMeetingURL(checkScreen = false) {
             <canvas id="qrRoom"></canvas>
         </div>
         <br/>
-        <p style="color:rgb(8, 189, 89);">Join from your mobile device</p>
-        <p style="background:transparent; color:white; font-family: Arial, Helvetica, sans-serif;">No need for apps, simply capture the QR code with your mobile camera Or Invite someone else to join by sending them the following URL</p>
+        <p style="color:rgb(8, 189, 89);">Dołącz z urządzenia mobilnego</p>
+        <p style="background:transparent; color:white; font-family: Arial, Helvetica, sans-serif;">Bez żadnych aplikacji. Poprostu zeskanuj kod QR urządzeniem mobilnym lub zaproś kogoś do dołączenia udostępniając mu poniższy URL</p>
         <p style="color:rgb(8, 189, 89);">${roomURL}</p>`,
-        showDenyButton: true,
+        showDenyButton: false,
         showCancelButton: true,
         cancelButtonColor: 'red',
         denyButtonColor: 'green',
@@ -6079,7 +6079,7 @@ function shareRoomByEmail() {
         background: swBg,
         imageUrl: images.message,
         position: 'center',
-        title: 'Select a Date and Time',
+        title: 'Wybierz datę i czas',
         html: '<input type="text" id="datetimePicker" class="flatpickr" />',
         showCancelButton: true,
         confirmButtonText: 'OK',

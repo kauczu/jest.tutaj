@@ -865,25 +865,25 @@ function refreshMainButtonsToolTipPlacement() {
     // BottomButtons
     bottomButtonsPlacement = btnsBarSelect.options[btnsBarSelect.selectedIndex].value == 'vertical' ? 'top' : 'right';
 
-    setTippy(shareRoomBtn, 'Share the Room', placement);
-    setTippy(recordStreamBtn, 'Start recording', placement);
-    setTippy(fullScreenBtn, 'View full screen', placement);
-    setTippy(chatRoomBtn, 'Open the chat', placement);
-    setTippy(captionBtn, 'Open the caption', placement);
-    setTippy(roomEmojiPickerBtn, 'Send reaction', placement);
-    setTippy(whiteboardBtn, 'Open the whiteboard', placement);
-    setTippy(snapshotRoomBtn, 'Snapshot screen, windows or tab', placement);
-    setTippy(fileShareBtn, 'Share file', placement);
-    setTippy(documentPiPBtn, 'Toggle picture in picture', placement);
-    setTippy(mySettingsBtn, 'Open the settings', placement);
-    setTippy(aboutBtn, 'About this project', placement);
+    setTippy(shareRoomBtn, 'Udostępnij pokój', placement);
+    setTippy(recordStreamBtn, 'Rozpocznij nagrywanie', placement);
+    setTippy(fullScreenBtn, 'Pełny ekran', placement);
+    setTippy(chatRoomBtn, 'Otwórz czat', placement);
+    setTippy(captionBtn, 'Otwórz napisy', placement);
+    setTippy(roomEmojiPickerBtn, 'Wyślij reakcję', placement);
+    setTippy(whiteboardBtn, 'Otwórz tablicę', placement);
+    setTippy(snapshotRoomBtn, 'Zrzut ekranu, okna lub karty', placement);
+    setTippy(fileShareBtn, 'Udostępnij plik', placement);
+    setTippy(documentPiPBtn, 'Obraz w obrazie PIP', placement);
+    setTippy(mySettingsBtn, 'Otwórz ustawienia', placement);
+    setTippy(aboutBtn, 'O projekcie', placement);
 
-    setTippy(hideMeBtn, 'Toggle hide myself from the room view', bottomButtonsPlacement);
-    setTippy(audioBtn, useAudio ? 'Stop the audio' : 'My audio is disabled', bottomButtonsPlacement);
-    setTippy(videoBtn, useVideo ? 'Stop the video' : 'My video is disabled', bottomButtonsPlacement);
-    setTippy(screenShareBtn, 'Start screen sharing', bottomButtonsPlacement);
-    setTippy(myHandBtn, 'Raise your hand', bottomButtonsPlacement);
-    setTippy(leaveRoomBtn, 'Leave this room', bottomButtonsPlacement);
+    setTippy(hideMeBtn, 'Ukryj widok mojej kamery z podglądu pokoju', bottomButtonsPlacement);
+    setTippy(audioBtn, useAudio ? 'Wycisz audio' : 'Moje audio jest wyciszone', bottomButtonsPlacement);
+    setTippy(videoBtn, useVideo ? 'Zatrzymaj wideo' : 'Moje wideo jest zatrzymane', bottomButtonsPlacement);
+    setTippy(screenShareBtn, 'Udostępnij ekran', bottomButtonsPlacement);
+    setTippy(myHandBtn, 'Podnieś rękę', bottomButtonsPlacement);
+    setTippy(leaveRoomBtn, 'Opuść pokój', bottomButtonsPlacement);
 }
 
 /**
@@ -3392,17 +3392,17 @@ async function loadRemoteMediaStream(stream, peers, peer_id, kind) {
 
             // no mobile devices
             if (!isMobileDevice) {
-                setTippy(remotePeerName, 'Participant name', 'bottom');
-                setTippy(remoteHandStatusIcon, 'Participant hand is raised', 'bottom');
-                setTippy(remoteVideoStatusIcon, 'Participant video is on', 'bottom');
-                setTippy(remoteAudioStatusIcon, 'Participant audio is on', 'bottom');
-                setTippy(remoteAudioVolume, '🔊 Volume', 'top');
-                setTippy(remoteVideoAudioUrlBtn, 'Send Video or Audio', 'bottom');
-                setTippy(remotePrivateMsgBtn, 'Send private message', 'bottom');
-                setTippy(remoteFileShareBtn, 'Send file', 'bottom');
-                setTippy(remoteVideoToImgBtn, 'Take a snapshot', 'bottom');
-                setTippy(remotePeerKickOut, 'Kick out', 'bottom');
-                setTippy(remoteVideoFullScreenBtn, 'Full screen mode', 'bottom');
+                setTippy(remotePeerName, 'Nazwa uczestnika', 'bottom');
+                setTippy(remoteHandStatusIcon, 'Uczestnik podniósł rękę', 'bottom');
+                setTippy(remoteVideoStatusIcon, 'Wideo uczestnika jest włączone', 'bottom');
+                setTippy(remoteAudioStatusIcon, 'Audio uczestnika jest włączone', 'bottom');
+                setTippy(remoteAudioVolume, '🔊 Głośność', 'top');
+                setTippy(remoteVideoAudioUrlBtn, 'Wyślij wideo lub audio', 'bottom');
+                setTippy(remotePrivateMsgBtn, 'Wyślij prywatną wiadomość', 'bottom');
+                setTippy(remoteFileShareBtn, 'Wyślij plik', 'bottom');
+                setTippy(remoteVideoToImgBtn, 'Zrób zrzut ekranu', 'bottom');
+                setTippy(remotePeerKickOut, 'Wyrzuć', 'bottom');
+                setTippy(remoteVideoFullScreenBtn, 'Pełny ekran', 'bottom');
                 setTippy(remoteVideoZoomInBtn, 'Zoom in video', 'bottom');
                 setTippy(remoteVideoZoomOutBtn, 'Zoom out video', 'bottom');
                 setTippy(remoteVideoPiPBtn, 'Toggle picture in picture', 'bottom');

@@ -3405,8 +3405,8 @@ async function loadRemoteMediaStream(stream, peers, peer_id, kind) {
                 setTippy(remoteVideoFullScreenBtn, 'Pełny ekran', 'bottom');
                 setTippy(remoteVideoZoomInBtn, 'Zoom in video', 'bottom');
                 setTippy(remoteVideoZoomOutBtn, 'Zoom out video', 'bottom');
-                setTippy(remoteVideoPiPBtn, 'Toggle picture in picture', 'bottom');
-                setTippy(remoteVideoPinBtn, 'Toggle Pin video', 'bottom');
+                setTippy(remoteVideoPiPBtn, 'Obraz w obrazie PIP', 'bottom');
+                setTippy(remoteVideoPinBtn, 'Przypnij video', 'bottom');
                 setTippy(remoteVideoFocusBtn, 'Toggle Focus mode', 'bottom');
                 setTippy(remoteVideoMirrorBtn, 'Toggle video mirror', 'bottom');
             }
@@ -4622,7 +4622,7 @@ function setChatRoomBtn() {
     // show msger participants section
     msgerCPBtn.addEventListener('click', (e) => {
         if (!thereArePeerConnections()) {
-            return userLog('info', 'No participants detected');
+            return userLog('info', 'Nie wykryto uczestników');
         }
         elemDisplay(msgerCP, true, 'flex');
     });
@@ -8391,8 +8391,8 @@ function setMyVideoStatus(status) {
     emitPeerStatus('video', status);
 
     if (!isMobileDevice) {
-        if (myVideoStatusIcon) setTippy(myVideoStatusIcon, status ? 'My video is on' : 'My video is off', 'bottom');
-        setTippy(videoBtn, status ? 'Stop the video' : 'Start the video', bottomButtonsPlacement);
+        if (myVideoStatusIcon) setTippy(myVideoStatusIcon, status ? 'Moje wideo jest włączone' : 'Moje wideo jest wyłączone', 'bottom');
+        setTippy(videoBtn, status ? 'Zatrzymaj wideo' : 'Uruchom wideo', bottomButtonsPlacement);
     }
 
     if (status) {
@@ -8459,7 +8459,7 @@ function setPeerAudioStatus(peer_id, status) {
     const peerAudioVolume = getId(peer_id + '_audioVolume');
     if (peerAudioStatus) {
         peerAudioStatus.className = status ? className.audioOn : className.audioOff;
-        setTippy(peerAudioStatus, status ? 'Participant audio is on' : 'Participant audio is off', 'bottom');
+        setTippy(peerAudioStatus, status ? 'Audio uczestnika jest włączone' : 'Audio uczestnika jest wyłączone', 'bottom');
         status ? playSound('on') : playSound('off');
     }
     if (peerAudioVolume) {

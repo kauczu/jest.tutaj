@@ -831,20 +831,20 @@ function setButtonsToolTip() {
         'right',
     );
     // Whiteboard buttons
-    setTippy(whiteboardLockBtn, 'Toggle Lock whiteboard', 'right');
-    setTippy(whiteboardUnlockBtn, 'Toggle Lock whiteboard', 'right');
-    setTippy(whiteboardCloseBtn, 'Close', 'right');
-    setTippy(wbDrawingColorEl, 'Drawing color', 'bottom');
-    setTippy(whiteboardGhostButton, 'Toggle transparent background', 'bottom');
-    setTippy(wbBackgroundColorEl, 'Background color', 'bottom');
-    setTippy(whiteboardPencilBtn, 'Drawing mode', 'bottom');
-    setTippy(whiteboardObjectBtn, 'Object mode', 'bottom');
-    setTippy(whiteboardUndoBtn, 'Undo', 'bottom');
-    setTippy(whiteboardRedoBtn, 'Redo', 'bottom');
+    setTippy(whiteboardLockBtn, 'Zablokuj tablicę', 'right');
+    setTippy(whiteboardUnlockBtn, 'Odblokuj tablicę', 'right');
+    setTippy(whiteboardCloseBtn, 'Zamknij', 'right');
+    setTippy(wbDrawingColorEl, 'Kolor ołówka', 'bottom');
+    setTippy(whiteboardGhostButton, 'Przeźroczystość', 'bottom');
+    setTippy(wbBackgroundColorEl, 'Kolor tła', 'bottom');
+    setTippy(whiteboardPencilBtn, 'Rysowanie', 'bottom');
+    setTippy(whiteboardObjectBtn, 'Zaznaczanie', 'bottom');
+    setTippy(whiteboardUndoBtn, 'Cofnij', 'bottom');
+    setTippy(whiteboardRedoBtn, 'Powtórz', 'bottom');
     // Suspend/Hide File transfer buttons
-    setTippy(sendAbortBtn, 'Abort file transfer', 'bottom');
-    setTippy(receiveAbortBtn, 'Abort file transfer', 'bottom');
-    setTippy(receiveHideBtn, 'Hide file transfer', 'bottom');
+    setTippy(sendAbortBtn, 'Przerwij transfer pliku, 'bottom');
+    setTippy(receiveAbortBtn, 'Przerwij transfer pliku', 'bottom');
+    setTippy(receiveHideBtn, 'Ukryj transfer pliku', 'bottom');
     // Video/audio URL player
     setTippy(videoUrlCloseBtn, 'Close the video player', 'bottom');
     setTippy(videoAudioCloseBtn, 'Close the video player', 'bottom');
@@ -5004,7 +5004,7 @@ function setMyWhiteboardBtn() {
         //setWhiteboardBgColor(wbIsBgTransparent ? 'rgba(0, 0, 0, 0.100)' : wbBackgroundColorEl.value);
         wbIsBgTransparent ? wbCanvasBackgroundColor('rgba(0, 0, 0, 0.100)') : setTheme();
     });
-    // Hide the whiteboard dropdown menu if clicked outside
+    // Hide  dropdown menu if clicked outside
     document.addEventListener('click', (event) => {
         if (!whiteboardDropDownMenuBtn.contains(event.target) && !whiteboardDropDownMenuBtn.contains(event.target)) {
             elemDisplay(whiteboardDropdownMenu, false);
@@ -9100,7 +9100,7 @@ function toggleLockUnlockWhiteboard() {
     whiteboardAction(getWhiteboardAction(action));
 
     if (wbIsLock) {
-        userLog('toast', 'The whiteboard is locked. \n The participants cannot interact with it.');
+        userLog('toast', 'TTablica jest zablokowana. \n Uczestnicy nie mogą korzystać z niej.');
         playSound('locked');
     }
 }
@@ -9111,9 +9111,9 @@ function toggleLockUnlockWhiteboard() {
 function toggleWhiteboard() {
     if (!wbIsOpen) {
         playSound('newMessage');
-        setTippy(whiteboardBtn, 'Close the Whiteboard', placement);
+        setTippy(whiteboardBtn, 'Close ', placement);
     } else {
-        setTippy(whiteboardBtn, 'Open the Whiteboard', placement);
+        setTippy(whiteboardBtn, 'Open ', placement);
     }
 
     whiteboard.classList.toggle('show');
